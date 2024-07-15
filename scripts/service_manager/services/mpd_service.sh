@@ -1,0 +1,6 @@
+#!/bin/bash
+sudo usermod -a -G input $USER
+echo -e "Added user to input group\e[0m"
+
+sudo systemctl enable mpd
+echo -e "Added mdp to system\e[0m"

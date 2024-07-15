@@ -1,0 +1,96 @@
+#-------------------------------------------Dotfile manager
+stow
+
+#-------------------------------------------Hyprland
+hyprland-git
+xdg-desktop-portal-gtk
+xdg-desktop-portal-hyprland
+qt6-wayland
+qt5-wayland
+qt5ct
+qt6ct
+
+#-------------------------------------------Terminal 
+kitty
+zsh
+tmux
+starship
+fd
+fmt
+
+#-------------------------------------------Bluetooth modules
+bluez
+bluez-util
+blueman
+
+#-------------------------------------------Fonts 
+font-manager
+awesome-terminal-fonts
+ttf-jetbrains-mono-nerd
+
+#-------------------------------------------File management 
+curl
+unzip
+zip
+wget
+
+#-------------------------------------------GTK 
+gtk3
+gtk-layer-shell
+gtkmm3
+libappindicator-gtk3
+libdbusmenu-gtk3
+arc-gtk-theme
+
+#-------------------------------------------Audio 
+pipewire
+pipewire-pulse
+pipewire-audio
+wireplumber
+pamixer
+mpd
+pavucontrol
+
+#-------------------------------------------Authentication agent
+polkit-kde-agent
+
+#-------------------------------------------Screen sharing and utilities
+xdg-desktop-portal-hyprland 
+slurp
+grim
+
+#-------------------------------------------Clipboard
+wl-clipboard
+cliphist
+
+#-------------------------------------------Theming
+wpgtk
+python-pywal
+python-pywalfox
+pywal-discord
+
+#-------------------------------------------UI
+nwg-look
+nm-applet
+wlogout
+rofi
+htop
+
+#-------------------------------------------OS services
+thunderbird
+
+#-------------------------------------------Notification system
+#swaync
+#swayosd
+
+#-------------------------------------------Screen
+brightnessctl
+nwg-displays
+gammastep
+
+#-------------------------------------------Communication
+betterdiscordctl
+
+#-------------------------------------------UI backend
+upower
+imagemagick
