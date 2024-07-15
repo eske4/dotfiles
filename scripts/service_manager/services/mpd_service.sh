@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo usermod -a -G input $USER
+sudo usermod -a -G input "$USER"
 echo -e "Added user to input group\e[0m"
 
 sudo systemctl enable mpd
