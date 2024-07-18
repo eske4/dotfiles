@@ -148,6 +148,7 @@ tooltip {
 
 #taskbar.empty {
   background: transparent;
+  background-color: transparent;
 }
 
 /* Individual modules */

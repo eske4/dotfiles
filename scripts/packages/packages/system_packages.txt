@@ -44,10 +44,10 @@ arc-gtk-theme
 
 #-------------------------------------------Audio 
 pipewire
-pipewire-pulse
-pipewire-audio
 wireplumber
-pamixer
+pipewire-audio
+pipewire-alsa
+pipewire-pulse
 mpd
 pavucontrol
 
@@ -80,8 +80,7 @@ htop
 thunderbird
 
 #-------------------------------------------Notification system
-#swaync
-#swayosd
+swaync
 
 #-------------------------------------------Screen
 brightnessctl

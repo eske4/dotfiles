@@ -4,8 +4,8 @@
 HISTFILE=~/.zsh_history
 
 # source
-plug "$HOME/.config/zsh/aliases.zsh"
-plug "$HOME/.config/zsh/exports.zsh"
+plug "$HOME/dotfiles/home/.config/zsh/aliases.zsh"
+plug "$HOME/dotfiles/home/.config/zsh/exports.zsh"
 
 plug "zsh-users/zsh-autosuggestions"
 plug "esc/conda-zsh-completion"
