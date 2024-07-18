@@ -9,6 +9,8 @@ qt6-wayland
 qt5-wayland
 qt5ct
 qt6ct
+hyprlock-git
+hypridle-git
 
 #-------------------------------------------Terminal 
 kitty
