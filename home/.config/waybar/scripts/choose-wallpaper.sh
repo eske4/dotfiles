@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# Fetch all wallpapers in the folder
-wpg -a ~/dotfiles/home/Wallpapers/*
-
 # Get wallpaper name from waypaper parameter
 WALLPAPER=$(basename "$1")
 
