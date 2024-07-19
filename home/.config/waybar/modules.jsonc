@@ -134,7 +134,7 @@
     "custom/wallpaper": {
         "format": "{icon}",
         "format-icons": "",
-        "on-click": "$HOME/dotfiles/home/.config/waybar/scripts/choose-wallpaper.sh",
+        "on-click": "$HOME/dotfiles/home/.config/waybar/scripts/launch-wallpaper-chooser.sh",
         "tooltip": false
     },
     "custom/clipboard": {

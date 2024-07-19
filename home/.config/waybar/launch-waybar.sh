@@ -4,6 +4,7 @@
 WALLPAPER="$1"
 
 # kill waybar process
+killall waypaper
 killall waybar
 sleep 0.2
 
