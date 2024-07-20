@@ -12,6 +12,7 @@ qt6ct
 hyprlock-git
 hypridle-git
 waypaper
+udiskie
 
 #-------------------------------------------Terminal 
 kitty
