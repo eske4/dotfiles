@@ -7,7 +7,7 @@
             "hyprland/workspaces"
         ], // Sets modules for the left of the bar
         "modules-center": [
-            "wlr/taskbar"
+            "wlr/taskbar",
         ], // Set modules for the center of the bar
         "modules-right": [
             "custom/exit",

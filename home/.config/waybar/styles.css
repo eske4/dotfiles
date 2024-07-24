@@ -164,6 +164,7 @@ tooltip {
 #custom-wallpaper,
 #custom-exit,
 #custom-clipboard,
+#custom-mission-center,
 #backlight,
 #custom-notification-center,
 #wireplumber,
@@ -220,6 +221,7 @@ window#waybar.empty #window {
 #custom-exit:hover,
 #custom-notification-center:hover,
 #custom-clipboard:hover,
+#custom-mission-center:hover,
 #backlight:hover {
   background-color: @accent;
   border-radius: 7px;

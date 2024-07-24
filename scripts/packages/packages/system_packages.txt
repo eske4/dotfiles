@@ -13,6 +13,7 @@ hyprlock-git
 hypridle-git
 waypaper
 udiskie
+mission-center
 
 #-------------------------------------------Terminal 
 kitty

@@ -87,6 +87,7 @@
             "custom/wallpaper",
             "custom/notification-center",
             "custom/clipboard",
+            "custom/mission-center",
             "tray"
         ]
     },
@@ -110,10 +111,11 @@
             " ",
             " "
         ],
-        "tooltip": false,
+        "tooltip": true,
         "on-scroll-up": "brightnessctl s 1%+",
         "on-scroll-down": "brightnessctl s 1%-",
-        "on-click": "pkill -x gammastep || gammastep -O 3500K"
+        "on-click": "pkill -x gammastep || gammastep -O 3500K",
+        "tooltip-format": "On click bluefilter, gesture to change brightness"
     },
     "disk": {
         "format": "<span>  {percentage_free}%</span>",
@@ -122,32 +124,44 @@
     "custom/exit": {
         "format": "{icon}",
         "on-click": "wlogout",
-        "tooltip": false,
-        "format-icons": "⏻"
+        "format-icons": "⏻",
+        "tooltip": "true",
+        "tooltip-format": "Power off"
     },
     "custom/applauncher": {
         "format": "{icon}",
         "format-icons": "",
         "on-click": "tofi-drun --drun-launch=true",
-        "tooltip": false
+        "tooltip": "true",
+        "tooltip-format": "App launcher"
     },
     "custom/wallpaper": {
         "format": "{icon}",
         "format-icons": "",
         "on-click": "$HOME/dotfiles/home/.config/waybar/scripts/launch-wallpaper-chooser.sh",
-        "tooltip": false
+        "tooltip": "true",
+        "tooltip-format": "Change wallpaper"
     },
     "custom/clipboard": {
         "format": "{icon}",
         "format-icons": "",
         "on-click": "cliphist list | tofi --prompt-text 'Clipboard:' | cliphist decode | wl-copy",
-        "tooltip": false
+        "tooltip": "true",
+        "tooltip-format": "Clipboard"
     },
     "custom/notification-center": {
         "on-click": "swaync-client -t -sw",
         "format": "{icon}",
         "format-icons": "",
-        "tooltip": false
+        "tooltip": "true",
+        "tooltip-format": "Notification center"
+    },
+    "custom/mission-center": {
+        "on-click": "missioncenter",
+        "format": "{icon}",
+        "format-icons": "",
+        "tooltip": "true",
+        "tooltip-format": "Task manager"
     },
     "wlr/taskbar": {
         "format": "{icon}",
