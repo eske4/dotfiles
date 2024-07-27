@@ -39,3 +39,7 @@ Follow these steps to set up your desktop environment:
 ## Bugs
 
 - Wallpaper change does not work while Neovim is open.
+
+## TODO
+- [] Setup SDDM(Simple Desktop Display Manager)
+- [] Script to remove all folder and configs, to be overridden by stow symlink instead
