@@ -2,12 +2,12 @@
     {
         "layer": "top", // Waybar on highest layer so tooltips go over windows
         //"output": "eDP-1", // Set output to primary monitor
-        "height": 66, // Set height to avoid jumping due to active workspace indicator
+        "height": 56, // Set height to avoid jumping due to active workspace indicator
         "modules-left": [
             "hyprland/workspaces"
         ], // Sets modules for the left of the bar
         "modules-center": [
-            "wlr/taskbar",
+            "wlr/taskbar"
         ], // Set modules for the center of the bar
         "modules-right": [
             "custom/exit",
