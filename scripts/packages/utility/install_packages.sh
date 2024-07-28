@@ -4,7 +4,7 @@
 check_if_comment() {
     local line=$1
     if [[ "${line:0:1}" == "#" ]]; then
-        echo "Skipping comment: $line"
+        echo "$line"
         return 0
     fi
     return 1
