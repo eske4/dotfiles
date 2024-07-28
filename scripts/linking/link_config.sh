@@ -19,7 +19,7 @@ fi
 cd "$DOTFILES_DIR" || { echo "${RED}Error: Unable to change directory to $DOTFILES_DIR.${NC}" >&2; exit 1; }
 
 # Use Stow to manage dotfiles
-if stow -t "$TARGET_DIR" . > /dev/null 2>&1; then
+if stow -t "$TARGET_DIR" . --adopt > /dev/null 2>&1; then
     echo -e "${GREEN}Dotfiles successfully linked to $TARGET_DIR.${NC}"
 else
     echo -e "${RED}Error: Failed to stow dotfiles.${NC}" >&2
