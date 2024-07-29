@@ -16,7 +16,7 @@ udiskie
 mission-center
 swappy
 swww
-sddm
+sddm-git
 
 #-------------------------------------------Terminal 
 kitty
