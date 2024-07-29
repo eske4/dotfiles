@@ -45,4 +45,5 @@ Follow these steps to set up your desktop environment:
 - [x] Setup SDDM(Simple Desktop Display Manager).
 - [x] Script to symlink even when the file and structure already exists.
 - [x] Link scripts in miscs and hyprland to the installer scripts.
-- [ ] Customize login screen ui 
+- [ ] Customize login screen ui
+- [ ] Style SwayNc
