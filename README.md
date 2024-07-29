@@ -43,5 +43,5 @@ Follow these steps to set up your desktop environment:
 ## TODO
 
 - [ ] Setup SDDM(Simple Desktop Display Manager).
-- [ x ] Script to symlink even when the file and structure already exists.
-- [ x ] Link scripts in miscs and hyprland to the installer scripts.
+- [x] Script to symlink even when the file and structure already exists.
+- [x] Link scripts in miscs and hyprland to the installer scripts.
