@@ -15,6 +15,7 @@ waypaper
 udiskie
 mission-center
 swappy
+sddm
 
 #-------------------------------------------Terminal 
 kitty
