@@ -40,7 +40,7 @@ Follow these steps to set up your desktop environment:
 
 - **Waybar**: Bar UI
 - **GTK**: Graphical toolkit
-- **SDDM**: Display manager
+- **sddm-git**: Display manager
 - **Kitty**: Terminal emulator
 - **Hypridle**: Inactivity handler
 - **Hyprlock**: Lock screen
