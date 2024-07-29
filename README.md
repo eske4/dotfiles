@@ -60,7 +60,7 @@ Follow these steps to set up your desktop environment:
 - **tofi**: Applauncher
 - **swappy**: Screenshot editor
 - **nwg**: GTK manager ui
-  **starship** Terminal tool
+- **starship** Terminal tool
 
 ## Bugs
 
