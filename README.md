@@ -47,3 +47,24 @@ Follow these steps to set up your desktop environment:
 - [x] Link scripts in miscs and hyprland to the installer scripts.
 - [ ] Customize login screen ui
 - [ ] Style SwayNc
+
+## Dependencies
+
+- **Waybar**: Bar UI
+- **GTK**: Graphical toolkit
+- **SDDM**: Display manager
+- **Kitty**: Terminal emulator
+- **Hypridle**: Inactivity handler
+- **Hyprlock**: Lock screen
+- **SWWW**: Wallpaper engine
+- **Waypaper**: Wallpaper changer UI
+- **UDiskie**: External drive manager
+- **Hyprland**: Desktop environment
+- **Pipewire**: Audio engine
+- **Wireplumber**: Pipewire session manager
+- **Pavucontrol**: Audio control UI
+- **slurp** and **grim**: Screenshot system
+- **Cliphist**: Clipboard manager
+- **Pywal**: Theming tool
+- **SwayNc**: Notification center
+- **UPower**: Power management tool
