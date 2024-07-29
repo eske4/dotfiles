@@ -40,27 +40,27 @@ Follow these steps to set up your desktop environment:
 
 - **Waybar**: Bar UI
 - **GTK**: Graphical toolkit
-- **sddm-git**: Display manager
+- **Sddm-git**: Display manager
 - **Kitty**: Terminal emulator
+- **Hyprland-git**: Desktop environment
 - **Hypridle**: Inactivity handler
 - **Hyprlock**: Lock screen
 - **SWWW**: Wallpaper engine
 - **Waypaper**: Wallpaper changer UI
 - **UDiskie**: External drive manager
-- **Hyprland**: Desktop environment
 - **Pipewire**: Audio engine
 - **Wireplumber**: Pipewire session manager
 - **Pavucontrol**: Audio control UI
-- **slurp** and **grim**: Screenshot system
+- **Slurp** and **Grim**: Screenshot system
 - **Cliphist**: Clipboard manager
 - **Pywal**: Theming tool
-- **wpgtk**: Pywal manager
+- **Wpgtk**: Pywal manager
 - **SwayNc**: Notification center
 - **UPower**: Power management tool
-- **tofi**: Applauncher
-- **swappy**: Screenshot editor
-- **nwg**: GTK manager ui
-- **starship** Terminal tool
+- **Tofi**: Applauncher
+- **Swappy**: Screenshot editor
+- **Nwg**: GTK manager ui
+- **Starship** Terminal tool
 
 ## Bugs
 
