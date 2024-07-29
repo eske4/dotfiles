@@ -66,5 +66,10 @@ Follow these steps to set up your desktop environment:
 - **slurp** and **grim**: Screenshot system
 - **Cliphist**: Clipboard manager
 - **Pywal**: Theming tool
+- **wpgtk**: Pywal manager
 - **SwayNc**: Notification center
 - **UPower**: Power management tool
+- **tofi**: Applauncher
+- **swappy**: Screenshot editor
+- **nwg**: GTK manager ui
+- **starship** Terminal tool
