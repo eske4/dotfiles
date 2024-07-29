@@ -36,18 +36,6 @@ Follow these steps to set up your desktop environment:
    - Install the add-on from [this link](https://addons.thunderbird.net/en-US/thunderbird/addon/pywalfox/).
    - Go to Thunderbird's add-on section and enable the add-on.
 
-## Bugs
-
-- Wallpaper change does not work while Neovim is open.
-
-## TODO
-
-- [x] Setup SDDM(Simple Desktop Display Manager).
-- [x] Script to symlink even when the file and structure already exists.
-- [x] Link scripts in miscs and hyprland to the installer scripts.
-- [ ] Customize login screen ui
-- [ ] Style SwayNc
-
 ## Dependencies
 
 - **Waybar**: Bar UI
@@ -72,4 +60,16 @@ Follow these steps to set up your desktop environment:
 - **tofi**: Applauncher
 - **swappy**: Screenshot editor
 - **nwg**: GTK manager ui
-- **starship** Terminal tool
+  **starship** Terminal tool
+
+## Bugs
+
+- Wallpaper change does not work while Neovim is open.
+
+## TODO
+
+- [x] Setup SDDM(Simple Desktop Display Manager).
+- [x] Script to symlink even when the file and structure already exists.
+- [x] Link scripts in miscs and hyprland to the installer scripts.
+- [ ] Customize login screen ui
+- [ ] Style SwayNc
