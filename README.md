@@ -72,5 +72,6 @@ Follow these steps to set up your desktop environment:
 - [x] Script to symlink even when the file and structure already exists.
 - [x] Link scripts in miscs and hyprland to the installer scripts.
 - [ ] Customize login screen ui
+- [ ] Restyle Hyprlock
 - [x] Themed SwayNC
 - [x] Themed Wlogout
