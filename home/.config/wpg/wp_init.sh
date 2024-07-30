@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-wpg -rs 'default.png' 'default.png'
+wpg -rs 'sunset-mountain-beautiful-digital-art-scenery-4k-wallpaper-uhdpaper.com-183@1@n.jpg' 'sunset-mountain-beautiful-digital-art-scenery-4k-wallpaper-uhdpaper.com-183@1@n.jpg'
