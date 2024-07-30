@@ -151,11 +151,24 @@
         "tooltip-format": "Clipboard"
     },
     "custom/notification-center": {
-        "on-click": "swaync-client -t -sw",
+        "tooltip": false,
         "format": "{icon}",
-        "format-icons": "",
-        "tooltip": "true",
-        "tooltip-format": "Notification center"
+        "format-icons": {
+            "notification": "<span><sup></sup></span>",
+            "none": "",
+            "dnd-notification": "<span><sup></sup></span>",
+            "dnd-none": "",
+            "inhibited-notification": "<span><sup></sup></span>",
+            "inhibited-none": "",
+            "dnd-inhibited-notification": "<span><sup></sup></span>",
+            "dnd-inhibited-none": ""
+        },
+        "return-type": "json",
+        "exec-if": "which swaync-client",
+        "exec": "swaync-client -swb",
+        "on-click": "swaync-client -t -sw",
+        "on-click-right": "swaync-client -d -sw",
+        "escape": true
     },
     "custom/mission-center": {
         "on-click": "missioncenter",

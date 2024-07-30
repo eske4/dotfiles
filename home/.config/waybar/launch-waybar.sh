@@ -12,9 +12,11 @@ sleep 0.2
 cp -f ~/.cache/wal/colors-tofi.conf "$HOME"/dotfiles/home/.config/tofi/config
 cp -f ~/.cache/wal/colors-hyprland.conf "$HOME"/dotfiles/home/.config/hypr/conf/colors-hyprland.conf
 cp -f ~/.cache/wal/colors-waybar.css "$HOME"/dotfiles/home/.config/waybar/colors-waybar.css
+cp -f ~/.cache/wal/colors-swaync.css "$HOME"/dotfiles/home/.config/swaync/colors-swaync.css
 pywal-discord -d "$WALLPAPER" &
 pywal-discord -t default &
 pywalfox update &
 
 # Start waybar again
 waybar -c "$HOME/dotfiles/home/.config/waybar/config.jsonc"  -s "$HOME/dotfiles/home/.config/waybar/styles.css" &
+swaync-client -rs
