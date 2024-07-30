@@ -24,7 +24,7 @@ if [[ -n $WALLPAPER ]]; then
     pywal-discord -t default &
     pywalfox update &
 
-    # Switch Hyprlock background
+    # Switch Hyprlock and sddm background
     
     if [[ "$1" == *.jpg || "$1" == *.png ]]; then
         cp -r "$HOME/dotfiles/home/.config/wpg/.current" "$HOME/dotfiles/home/Wallpapers/.current"
