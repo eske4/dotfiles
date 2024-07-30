@@ -83,7 +83,7 @@ nwg-look
 lxappearance
 nm-applet
 wlogout
-rofi
+tofi
 htop
 
 #-------------------------------------------OS services
