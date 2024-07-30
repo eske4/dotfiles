@@ -23,5 +23,3 @@ plug "zap-zsh/exa"
 autoload -Uz compinit
 
 eval "$(starship init zsh)"
-
-
