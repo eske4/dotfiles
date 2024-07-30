@@ -73,5 +73,6 @@ Follow these steps to set up your desktop environment:
 - [x] Link scripts in miscs and hyprland to the installer scripts.
 - [ ] Customize login screen ui
 - [ ] Restyle Hyprlock
+- [ ] Setup a script to copy default wal in .cache
 - [x] Themed SwayNC
 - [x] Themed Wlogout
