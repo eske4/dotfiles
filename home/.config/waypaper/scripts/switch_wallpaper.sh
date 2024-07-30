@@ -14,7 +14,7 @@ if [[ -n $WALLPAPER ]]; then
     killall waybar
     sleep 0.2
 
-    # Update the color schemes
+    # Apply colorscheme
     cp -f ~/.cache/wal/colors-tofi.conf "$HOME"/dotfiles/home/.config/tofi/config
     cp -f ~/.cache/wal/colors-hyprland.conf "$HOME"/dotfiles/home/.config/hypr/conf/colors-hyprland.conf
     cp -f ~/.cache/wal/colors-waybar.css "$HOME"/dotfiles/home/.config/waybar/colors-waybar.css
