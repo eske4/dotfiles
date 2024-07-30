@@ -17,9 +17,6 @@ install_package() {
     echo -n "Installing package: $package ..."
     yay -S --noconfirm "$package" > /dev/null 2>&1
     if [ $? -eq 0 ]; then
-        if [ "$package" == 'rustup' ]; then
-            sudo pacman -R --noconfirm rust > /dev/null 2>&1
-        fi
         echo -e "\e[32m[OK]\e[0m"
     else
         echo -e "\e[31m[Failed]\e[0m"

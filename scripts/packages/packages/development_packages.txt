@@ -10,7 +10,10 @@ lua
 luacheck
 luarocks
 
-#---------------C/C++
+#---------------Rust
+rustup
+
+u---------------C/C++
 gcc
 make
 cmake

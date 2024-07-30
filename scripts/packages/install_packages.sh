@@ -9,5 +9,8 @@ bash "${SCRIPT_DIR}/core/install_yay.sh"
 # Install development packages
 bash "${SCRIPT_DIR}/utility/install_packages.sh" "${SCRIPT_DIR}/packages/development_packages.txt"
 
+# Install rustup toolchains
+bash "${SCRIPT_DIR}/utility/install_rustup_tools.sh" "${SCRIPT_DIR}/packages/development_packages.txt"
+
 # Install system packages
 bash "${SCRIPT_DIR}/utility/install_packages.sh" "${SCRIPT_DIR}/packages/system_packages.txt"
