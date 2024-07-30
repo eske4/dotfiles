@@ -18,7 +18,6 @@ mission-center
 swappy
 swww
 sddm-git
-sddm-sugar-dark
 
 #-------------------------------------------Terminal 
 kitty
