@@ -73,6 +73,6 @@ Follow these steps to set up your desktop environment:
 - [x] Link scripts in miscs and hyprland to the installer scripts.
 - [ ] Customize login screen ui
 - [x] Restyle Hyprlock
-- [] Fix Hyprlock style when using gif as background
+- [ ] Fix Hyprlock style when using gif as background
 - [x] Themed SwayNC
 - [x] Themed Wlogout
