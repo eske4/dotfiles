@@ -1,8 +1,7 @@
 #!/bin/bash
 sudo systemctl enable sddm
 
-sudo rm -rf "/usr/share/sddm/themes/sugar-dark"
-yay -S sddm-sugar-dark
+yay -S sddm-sugar-dark --noconfirm
 sudo rm -rf "/usr/share/sddm/themes/sugar-dark"
 
 sudo mkdir -p /etc/sddm.conf.d
