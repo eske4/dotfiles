@@ -18,6 +18,7 @@ mission-center
 swappy
 swww
 sddm-git
+dolphin
 
 #-------------------------------------------Terminal 
 kitty
