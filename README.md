@@ -36,6 +36,11 @@ Follow these steps to set up your desktop environment:
    - Install the add-on from [this link](https://addons.thunderbird.net/en-US/thunderbird/addon/pywalfox/).
    - Go to Thunderbird's add-on section and enable the add-on.
 
+### Step 5: Add hyprpm plugin
+
+1. Navigate to `~/dotfiles/scripts/hyprland/`.
+2. Run the script plugins.sh
+
 ## Dependencies
 
 - **Waybar**: Bar UI
