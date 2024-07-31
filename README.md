@@ -39,7 +39,7 @@ Follow these steps to set up your desktop environment:
 ### Step 5: Add hyprpm plugin
 
 1. Navigate to `~/dotfiles/scripts/hyprland/`.
-2. Run the script plugins.sh
+2. Run the script `setup_hypr_plugins.sh`
 
 ## Dependencies
 
