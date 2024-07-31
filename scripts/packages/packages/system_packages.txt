@@ -19,6 +19,7 @@ swappy
 swww
 sddm-git
 dolphin
+waybar
 
 #-------------------------------------------Terminal 
 kitty
