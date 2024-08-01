@@ -1,6 +1,6 @@
-@define-color foreground rgb(139,220,243);
-@define-color background rgb(18,18,31);
-@define-color background-alpha rgba(18,18,31,0.8);
-@define-color accent rgba(47,103,203, 0.8);
-@define-color current-line rgb(18,18,31);
-@define-color comment rgb(177,85,188);
+@define-color foreground rgb(201,233,231);
+@define-color background rgb(2,20,12);
+@define-color background-alpha rgba(2,20,12,0.8);
+@define-color accent rgba(7,118,139, 0.8);
+@define-color current-line rgb(2,20,12);
+@define-color comment rgb(74,209,215);

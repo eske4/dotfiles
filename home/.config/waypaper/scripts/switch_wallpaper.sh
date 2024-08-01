@@ -28,6 +28,7 @@ if [[ -n $WALLPAPER ]]; then
     
     if [[ "$1" == *.jpg || "$1" == *.png ]]; then
         cp -r "$HOME/dotfiles/home/.config/wpg/.current" "$HOME/dotfiles/home/Wallpapers/.current"
+        cp -r "$1" "$HOME/dotfiles/home/.config/sddm/sugar-dark/default.png"
     fi
 
 
