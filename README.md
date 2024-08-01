@@ -81,6 +81,7 @@ Follow these steps to set up your desktop environment:
 - [x] Fix Hyprlock style when using gif as background
 - [x] Themed SwayNC
 - [x] Themed Wlogout
+- [x] Responsive wallpaper change on SDDM 
 
 ## Requirement
 
