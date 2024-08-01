@@ -8,7 +8,7 @@ Follow these steps to set up your desktop environment:
 
 ### Step 1: Display Settings
 
-1. Open Display Settings.
+1. Open `Display Settings` with the app launcher. 
 2. Ensure the scale is set to 1.
 3. Set the screen size to maximum.
 
