@@ -1,10 +1,9 @@
 #!/bin/bash
 sudo systemctl enable sddm
 
-sudo pacman -S qt5-graphicaleffects qt5-quickcontrols2 qt5-svg
+yay -S sddm-sugar-dark --noconfirm
 
 sudo mkdir -p /etc/sddm.conf.d
 
-sudo ln -sfn "$HOME/dotfiles/home/.config/sddm/sugar-dark" "/usr/share/sddm/themes"
 sudo ln -sfn "$HOME/dotfiles/home/.config/sddm/sddm.conf" "/etc/sddm.conf.d/sddm.conf"
 
