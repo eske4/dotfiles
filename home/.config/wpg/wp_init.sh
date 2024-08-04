@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-wpg -rs 'fxVE.gif' 'fxVE.gif'
+wpg -rs 'default.png' 'default.png'

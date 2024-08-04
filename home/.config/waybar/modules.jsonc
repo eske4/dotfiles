@@ -139,7 +139,7 @@
     "custom/wallpaper": {
         "format": "{icon}",
         "format-icons": "",
-        "on-click": "$HOME/dotfiles/home/.config/waybar/scripts/launch-waypaper.sh",
+        "on-click": "$HOME/dotfiles/home/.config/waypaper/scripts/launch-waypaper.sh",
         "tooltip": "true",
         "tooltip-format": "Change wallpaper"
     },
