@@ -1,0 +1,34 @@
+[user]
+    name = eske
+	email = eske.larsen@gmail.com
+	username = eske4
+
+[commit]
+	template = ~/dotfiles/links/.gitmessage
+
+[core]
+	editor = nvim
+
+[rebase]
+    autoSquash = true       # Automatically squash commits with 'fixup!' or 'squash!' during rebase
+    stat = true               # Show diff stats during rebase
+    autoStash = true          # Automatically stash changes before rebase, and apply afterward
+    interactive = nvim         # Use Vim for interactive rebase
+
+[pull]
+	rebase = true
+
+[color]
+    ui = auto                 # Enable colored output in Git commands (status, diff, etc.)
+
+[alias]
+    list = branch -a
+    wt = worktree
+    wt-list = worktree list
+    wt-prune = worktree prune
+
+[push]
+	autoSetupRemote = true
+
+[url "ssh://git@github.com/"]
+	insteadOf = https://github.com/
