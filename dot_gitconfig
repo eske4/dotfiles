@@ -4,7 +4,7 @@
 	username = eske4
 
 [commit]
-	template = ~/dotfiles/links/.gitmessage
+	template = ~/.gitmessage
 
 [core]
 	editor = nvim
