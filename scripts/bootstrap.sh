@@ -6,7 +6,7 @@ set -e
 sudo pacman -Syu --noconfirm
 
 # Install essential system services
-CORE_PKGS=(chezmoi sddm hyprland networkmanager bluez bluez-utils pipewire wireplumber pipewire-pulse pipewire-alsa pipewire-jack libpulse power-profiles-daemon linux-headers)
+CORE_PKGS=(chezmoi sddm hyprland networkmanager bluez bluez-utils pipewire wireplumber pipewire-pulse pipewire-alsa pipewire-jack libpulse power-profiles-daemon udiskie xdg-user-dirs linux linux-headers brightnessctl)
 GAMING_PKGS=(steam lib32-vkd3d vkd3d gamemode lib32-gamemode wine wine-gecko wine-mono freetype2 flatpak v4l2loopback-dkms v4l2loopback-utils v4l-utils pipewire-v4l2 lib32-pipewire-v4l2 mangohud gamescope goverlay protonup-qt)
 BASIC_APPS=(discord vlc librewolf-bin libreoffice-fresh krita cheese obsidian)
 
@@ -50,5 +50,12 @@ systemctl --user enable --now pipewire wireplumber pipewire-pulse
 
 # Optional: enable fstrim for SSDs
 sudo systemctl enable --now fstrim.timer
+
+# --- 2. XDG Folder Structure (User level) ---
+# Ensure the package is installed first (xdg-user-dirs)
+if command -v xdg-user-dirs-update &> /dev/null; then
+    echo ":: Updating standard folder structure..."
+    xdg-user-dirs-update
+fi
 
 echo "Done! Please reboot to enter Hyprland."

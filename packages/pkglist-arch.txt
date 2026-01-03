@@ -1,0 +1,77 @@
+# File system
+7zip 
+ntfs-3g
+gvfs-mtp
+gnome-disk-utility 
+xdg-user-dirs
+xdg-utils 
+archlinux-xdg-menu
+
+# Graphics
+qt5-wayland 
+qt6-wayland 
+qt5-quickcontrols2 
+qt5-graphicaleffects
+qt5-svg
+qt6-multimedia
+qt6-declarative
+gtk3
+gtk-layer-shell
+gtkmm3
+libappindicator-gtk3
+libdbusmenu-gtk3
+
+# Desktop services
+xdg-desktop-portal-hyprland
+xdg-desktop-portal-gtk
+hyprpolkitagent
+libnotify
+
+# Audio
+playerctl
+cava
+
+# Shell enviroment
+quickshell
+matugen
+nwg-look
+nwg-displays
+font-manager
+qt5ct
+qt6ct
+adw-gtk-theme
+arc-gtk-theme
+breeze-icons
+adwaita-icon-theme
+papirus-icon-theme
+noctalia-shell
+
+# Tools
+cliphist
+wl-clipboard
+cpio
+cmake
+grim
+slurp
+swappy
+wget
+gpu-screen-recorder
+imagemagick
+hypridle
+wlsunset
+timeshift
+mission-center
+dolphin 
+ark
+
+# Fonts
+ttf-jetbrains-mono-nerd 
+ttf-font-awesome
+
+# Terminal
+kitty
+starship
+zsh
+eza
+
+

@@ -1,4 +1,22 @@
 #!/bin/bash
-# script hash: {{ include "system/personalize.sh" | sha256sum }}
 
-bash {{ joinPath .chezmoi.sourceDir "system/personalize.sh" | quote }}
+# 1. TRIGGER: This script re-runs if the logic OR the package list changes
+# script hash: {{ include "scripts/sync-arch.sh" | sha256sum }}
+# list hash:   {{ include "packages.txt" | sha256sum }}
+
+{{ if eq .chezmoi.os "linux" -}}
+    {{ if eq .chezmoi.osRelease.id "arch" -}}
+
+        echo ":: Arch Linux detected. Starting sync..."
+        
+        SYNC_SCRIPT="{{ .chezmoi.sourceDir }}/scripts/sync-arch.sh"
+        PKG_LIST="{{ .chezmoi.sourceDir }}/pkglist-arch.txt"
+        
+        # Ensure the script is executable just in case
+        chmod +x "$SYNC_SCRIPT"
+        
+        # Execute the worker script
+        bash "$SYNC_SCRIPT" "$PKG_LIST"
+
+    {{ end }}
+{{ end }}
