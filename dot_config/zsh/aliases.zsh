@@ -80,4 +80,4 @@ alias search="find . -iname"
 alias searchdir="find . -type d -iname"
 alias searchf="find . -type f -iname"
 
-
+alias update="chezmoi update && notify-send 'System' 'Dotfiles Synced' -i checkbox-checked"

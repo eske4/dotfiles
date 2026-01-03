@@ -1,0 +1,13 @@
+#!/bin/bash
+
+{{ if eq .chezmoi.os "linux" -}}
+    {{ if eq .chezmoi.osRelease.id "arch" -}}
+echo ":: Arch Linux detected. Starting bootstrap..."
+bash {{ joinPath .chezmoi.sourceDir "system/bootstrap.sh" | quote }}
+    {{ else -}}
+echo ":: Linux detected, but not Arch (Found: {{ .chezmoi.osRelease.id }}). Skipping bootstrap."
+    {{ end -}}
+{{ else -}}
+echo ":: Non-Linux system detected. Skipping bootstrap."
+{{ end -}}
+

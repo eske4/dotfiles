@@ -1,0 +1,4 @@
+#!/bin/bash
+# script hash: {{ include "system/personalize.sh" | sha256sum }}
+
+bash {{ joinPath .chezmoi.sourceDir "system/personalize.sh" | quote }}
