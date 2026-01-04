@@ -22,7 +22,7 @@ chezmoi init --apply https://github.com/eske4/dotfiles
 2. **Wallpapers**: 
    - 5 default wallpapers are included.
    - Place your own images in `~/Pictures/Wallpapers`.
-3. **Hyprbars (Optional)**: To enable Windows-like window decorations, uncomment the rules in `.config/hypr/window-rules` and install the plugin:
+3. **Hyprbars (Optional)**: To enable Windows-like window decorations with rules, uncomment the no_bar setting in `.config/hypr/window-rules` and install the plugin:
    ```bash
    hyprpm add https://github.com/hyprwm/hyprland-plugins
    hyprpm enable hyprbars
