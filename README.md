@@ -41,6 +41,8 @@ To update your configurations or pull the latest changes from this repository la
 update
 ```
 
+---
+
 ### Post-Installation Setup
 
 Skip if you only came for the files and not the setup
