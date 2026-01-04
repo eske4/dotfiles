@@ -13,7 +13,7 @@ My personal Arch Linux + Hyprland and Noctalia dotfile configuration, managed wi
 
 ```bash
 sudo pacman -S chezmoi
-chezmoi init --apply [https://github.com/eske4/dotfiles](https://github.com/eske4/dotfiles)
+chezmoi init --apply https://github.com/eske4/dotfiles
 ```
 
 ### Post-Installation Setup
