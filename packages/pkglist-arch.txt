@@ -30,6 +30,7 @@ libnotify
 
 # Audio
 playerctl
+pavucontrol
 cava
 
 # Shell enviroment
