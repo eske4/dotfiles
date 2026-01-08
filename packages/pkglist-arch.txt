@@ -42,7 +42,6 @@ font-manager
 qt5ct
 qt6ct
 adw-gtk-theme
-arc-gtk-theme
 breeze-icons
 adwaita-icon-theme
 papirus-icon-theme
