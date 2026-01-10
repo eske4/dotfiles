@@ -56,7 +56,6 @@ grim
 slurp
 swappy
 wget
-gpu-screen-recorder
 imagemagick
 hypridle
 wlsunset
