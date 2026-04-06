@@ -100,5 +100,3 @@ The `mainMod` is the **Super** key.
 | `mainMod + V` | Clipboard history |
 | `Print Screen` | Screenshot (Grim + Slurp + Swappy) |
 | `Fn Keys` | Volume & Brightness control |
-
-little update
