@@ -1,0 +1,30 @@
+{{- if eq .chezmoi.osRelease.id "arch" -}}
+#!/bin/bash
+
+for cmd in curl tar grep sed; do
+    if ! command -v $cmd &> /dev/null; then
+        echo "Missing dependency: $cmd. Installing..."
+        sudo pacman -S --noconfirm $cmd
+    fi
+done
+
+if grep -q "\[cachyos\]" /etc/pacman.conf; then
+    echo "CachyOS repository already detected. Skipping."
+    exit 0
+fi
+
+# 2. If not detected, proceed with adding it
+echo "Adding CachyOS repository..."
+
+# You can either use their provided script or append manually
+# Example: Adding the key and list
+curl https://mirror.cachyos.org/cachyos-repo.tar.xz -o cachyos-repo.tar.xz
+tar xvf cachyos-repo.tar.xz && cd cachyos-repo
+sudo ./cachyos-repo.sh
+
+# Cleanup
+cd ..
+rm -rf cachyos-repo cachyos-repo.tar.xz
+
+echo "CachyOS repository added successfully."
+{{- end -}}

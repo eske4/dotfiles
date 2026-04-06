@@ -19,7 +19,6 @@ qt6-declarative
 gtk3
 gtk-layer-shell
 gtkmm3
-libappindicator-gtk3
 libdbusmenu-gtk3
 
 # Desktop services
@@ -34,7 +33,6 @@ pavucontrol
 cava
 
 # Shell enviroment
-quickshell
 matugen
 nwg-look
 nwg-displays
@@ -63,10 +61,11 @@ timeshift
 mission-center
 dolphin 
 ark
+zenity
 
 # Fonts
 ttf-jetbrains-mono-nerd 
-ttf-font-awesome
+ttf-firacode-nerd
 
 # Terminal
 kitty

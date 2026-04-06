@@ -1,22 +1,34 @@
 #!/bin/bash
-# Infinite loop, check every 3600 seconds (1 hour)
-while true; do
-    # 1. Fetch changes in the background
-    (cd "$HOME/.local/share/chezmoi" && git fetch -q)
-    
-    # 2. Check if local is behind remote
-    LOCAL=$(cd "$HOME/.local/share/chezmoi" && git rev-parse @)
-    REMOTE=$(cd "$HOME/.local/share/chezmoi" && git rev-parse @{u})
 
-    if [ "$LOCAL" != "$REMOTE" ]; then
-        # Trigger the popup only if updates exist
-        if zenity --question --title="Dotfiles Update" \
-                  --text="New settings are ready. Apply them now?" \
-                  --ok-label="Update" --cancel-label="Later"; then
-            chezmoi update -v | zenity --progress --pulsate --text="Updating..." --auto-close
+# 1. Environment fixes for Hyprland
+export PATH=$PATH:$HOME/.local/bin:/usr/bin:/usr/local/bin
+
+CHEZMOI_DIR="$HOME/.local/share/chezmoi"
+
+while true; do
+    if [ -d "$CHEZMOI_DIR" ]; then
+        cd "$CHEZMOI_DIR" || exit
+        
+        # Fetch silently
+        git fetch -q origin
+        
+        BRANCH=$(git branch --show-current)
+        LOCAL=$(git rev-parse HEAD)
+        REMOTE=$(git rev-parse "origin/$BRANCH")
+
+        if [ "$LOCAL" != "$REMOTE" ]; then
+            # Display popup
+            if zenity --question --title="Update Available" \
+                      --text="New settings are ready for this PC. Apply?" \
+                      --ok-label="Update" --cancel-label="Later"; then
+                
+                stdbuf -oL chezmoi update -v --force 2>&1 | zenity --progress --pulsate --text="Applying updates..." --auto-close
+                
+                # If the update finishes, it will close Zenity and notify
+                zenity --info --text="Update complete!" --timeout=3
+            fi
         fi
     fi
-
-    # Wait 1 hour before checking again
     sleep 3600
 done
+

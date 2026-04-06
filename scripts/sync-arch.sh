@@ -1,5 +1,4 @@
 #!/bin/bash
-
 # 1. Capture the argument
 PACKAGES_FILE="$1"
 
@@ -15,18 +14,11 @@ if [[ ! -f "$PACKAGES_FILE" ]]; then
     exit 1
 fi
 
-# 3. Read packages, ignoring comments and empty lines
 PACKAGES=$(grep -v '^#' "$PACKAGES_FILE" | xargs)
 
 # 4. System Update & Base Tools
-sudo pacman -Syu --needed --noconfirm base-devel git
-
-# 5. Install AUR/Official packages via yay
-if command -v yay &> /dev/null; then
-    yay -S --needed --noconfirm $PACKAGES
-else
-    echo ":: yay not found. Please install an AUR helper to process the list."
-fi
+echo ":: Updating system and installing packages from repositories..."
+pkexec pacman -Syu --needed --noconfirm base-devel git $PACKAGES
 
 # 6. Zsh and Zap Framework
 echo ":: Setting up Zsh and Zap..."
@@ -36,9 +28,15 @@ if [ ! -d "$HOME/.local/share/zap" ]; then
 fi
 
 # 7. Default Shell Change
-if [[ "$SHELL" != */zsh ]]; then
+if command -v zsh &> /dev/null; then
     echo ":: Changing default shell to Zsh..."
-    chsh -s "$(which zsh)"
+    pkexec chsh -s "$(which zsh)" "$USER"
 fi
+
+if command -v xdg-user-dirs-update &> /dev/null; then
+    echo ":: Updating standard folder structure..."
+    xdg-user-dirs-update
+fi
+
 
 echo ":: Sync completed"
