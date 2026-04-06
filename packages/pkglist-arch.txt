@@ -73,5 +73,3 @@ starship
 zsh
 eza
 fastfetch
-
-

@@ -13,7 +13,22 @@ PKG_LIST={{ joinPath .chezmoi.sourceDir "packages/pkglist-arch.txt" | quote }}
 # 2. Gatekeeper Prompt
 # Using /dev/tty ensures interactivity during 'chezmoi apply'
 echo ":: Package list update/sync detected."
-read -p "   Do you want to sync system packages now? (y/N): " confirm
+
+# Check if Zenity exists AND if we have a GUI display active
+if command -v zenity &> /dev/null && [[ -n "$WAYLAND_DISPLAY" || -n "$DISPLAY" ]]; then
+    # This WILL trigger a popup on your Hyprland desktop
+    if zenity --question --title="System Sync" \
+              --text="New packages detected in config. Sync now?" \
+              --ok-label="Sync" --cancel-label="Skip" --timeout=60; then
+        confirm="y"
+    else
+        confirm="n"
+    fi
+else
+    # This ONLY works if you run 'chezmoi apply' manually in a terminal
+    echo ":: No GUI detected. Falling back to terminal prompt..."
+    read -p "   Do you want to sync system packages now? (y/N): " confirm < /dev/tty
+fi
 
 if [[ "$confirm" =~ ^[Yy]$ ]]; then
     echo ":: Starting Arch Linux package sync..."

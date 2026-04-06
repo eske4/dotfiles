@@ -17,17 +17,25 @@ while true; do
         REMOTE=$(git rev-parse "origin/$BRANCH")
 
         if [ "$LOCAL" != "$REMOTE" ]; then
-            # Display popup
+            # 1. Ask the question
             if zenity --question --title="Update Available" \
-                      --text="New settings are ready for this PC. Apply?" \
-                      --ok-label="Update" --cancel-label="Later"; then
-                
-                stdbuf -oL chezmoi update -v --force 2>&1 | zenity --progress --pulsate --text="Applying updates..." --auto-close
-                
-                # If the update finishes, it will close Zenity and notify
-                zenity --info --text="Update complete!" --timeout=3
+                --text="New settings are ready for this PC. Apply?" \
+                --ok-label="Update" --cancel-label="Later" --timeout=60; then
+    
+                # 2. Run the update with a simple 'pulsate' bar
+                # We use a subshell to run the command and pipe only to a progress bar
+                (
+                  # We add --force to ensure no 'overwrite?' prompts stop the script
+                  # We add --tty=false to tell chezmoi 'don't wait for a keyboard'
+                  chezmoi update --force --no-tty
+                ) | zenity --progress --pulsate --text="Applying updates..." --auto-close --no-cancel
+    
+                # 3. Final notification
+                notify-send "Chezmoi" "Update complete!" --icon=checkbox-checked-symbolic
             fi
+            # Display popup
         fi
+
     fi
     sleep 3600
 done
