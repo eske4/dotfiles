@@ -24,7 +24,7 @@ hl.on("hyprland.start", function()
 	-- ---------------------------
 	-- Workflow apps
 	-- ---------------------------
-	hl.exec_cmd("obsidian")
-	hl.exec_cmd("kitty --directory ~/Obsidian")
-	hl.exec_cmd("kitty")
+	hl.exec_cmd("[workspace special:note silent] obsidian")
+	hl.exec_cmd("[workspace special:note silent] kitty --directory ~/Obsidian")
+	hl.exec_cmd("[workspace special:terminal silent] kitty")
 end)
