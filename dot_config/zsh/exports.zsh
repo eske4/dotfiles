@@ -49,7 +49,7 @@ path_add \
   "$HOME/.tmux/plugins/tmuxifier/bin"
 
 # Dotnet setup
-export DOTNET_ROOT="$HOME/.dotnet"
+export DOTNET_ROOT="/usr/share/dotnet"
 path_add "$DOTNET_ROOT" "$DOTNET_ROOT/tools"
 
 dedup_path
