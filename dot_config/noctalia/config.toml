@@ -1,0 +1,24 @@
+[bar.default]
+radius = 23
+scale = 1.2000000104308128
+thickness = 32
+
+[theme]
+community_palette = "Oxocarbon"
+mode = "dark"
+source = "wallpaper"
+wallpaper_path = "~/Pictures/Wallpapers"
+wallpaper_scheme = "m3-tonal-spot"
+
+    [theme.templates]
+    builtin_ids = [ "gtk3", "hyprland", "kcolorscheme", "kitty", "qt", "starship" ]
+    community_ids = [ "pywalfox", "libreoffice", "neovim", "obsidian", "steam", "fastfetch", "fzf" ]
+
+[wallpaper]
+directory = "~/Pictures/Wallpapers"
+
+    [wallpaper.default]
+    path = "~/Pictures/Wallpapers/default.png"
+
+    [wallpaper.last]
+    path = "~/Pictures/Wallpapers/default.png"
