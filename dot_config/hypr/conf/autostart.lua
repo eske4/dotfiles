@@ -9,9 +9,10 @@ hl.on("hyprland.start", function()
 	hl.exec_cmd("hyprpm reload -n")
 	hl.exec_cmd("hypridle")
 	hl.exec_cmd("udiskie &")
+	hl.exec_cmd("otd-daemon")
 
-	-- Tray applications
-	hl.exec_cmd("qs -c noctalia-shell")
+	-- GUI
+	hl.exec_cmd("noctalia")
 
 	-- Clipboard daemon history
 	hl.exec_cmd("wl-paste --type text --watch cliphist store")

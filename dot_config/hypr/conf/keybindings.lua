@@ -4,8 +4,6 @@
 -- Variables
 -- --------------------
 local mainMod = "SUPER"
-local ipc = "qs -c noctalia-shell ipc call "
-
 local terminal = "kitty"
 local fileManager = "dolphin"
 
@@ -23,21 +21,13 @@ hl.bind(mainMod .. " + F11", hl.dsp.window.fullscreen())
 hl.bind("CONTROL + ALT + DELETE", hl.dsp.exec_cmd("missioncenter"))
 
 -- Media & Brightness (using flags like repeating for smooth hold behavior)
-hl.bind(
-	"XF86MonBrightnessDown",
-	hl.dsp.exec_cmd("qs -c noctalia-shell ipc call brightness decrease"),
-	{ repeating = true }
-)
-hl.bind(
-	"XF86MonBrightnessUp",
-	hl.dsp.exec_cmd("qs -c noctalia-shell ipc call brightness increase"),
-	{ repeating = true }
-)
+hl.bind("XF86MonBrightnessDown", hl.dsp.exec_cmd("noctalia msg brightness-down"), { repeating = true })
+hl.bind("XF86MonBrightnessUp", hl.dsp.exec_cmd("noctalia msg brightness-up"), { repeating = true })
 
-hl.bind("XF86AudioRaiseVolume", hl.dsp.exec_cmd("qs -c noctalia-shell ipc call volume increase"))
-hl.bind("XF86AudioLowerVolume", hl.dsp.exec_cmd("qs -c noctalia-shell ipc call volume decrease"))
-hl.bind("XF86AudioMute", hl.dsp.exec_cmd("qs -c noctalia-shell ipc call volume muteOutput"))
-hl.bind("XF86AudioMicMute", hl.dsp.exec_cmd("qs -c noctalia-shell ipc call volume muteInput"))
+hl.bind("XF86AudioRaiseVolume", hl.dsp.exec_cmd("noctalia msg volume-up"))
+hl.bind("XF86AudioLowerVolume", hl.dsp.exec_cmd("noctalia msg volume-down"))
+hl.bind("XF86AudioMute", hl.dsp.exec_cmd("noctalia msg volume-mute"))
+hl.bind("XF86AudioMicMute", hl.dsp.exec_cmd("noctalia msg mic-mute"))
 
 -- Screenshots (using Lua raw strings [[ ]] to easily handle nested quotes and pipes)
 hl.bind("PRINT", hl.dsp.exec_cmd([[grim -g "$(slurp)" - | swappy -f -]]))
@@ -49,9 +39,9 @@ hl.bind(mainMod .. " + k", hl.dsp.focus({ direction = "up" }))
 hl.bind(mainMod .. " + j", hl.dsp.focus({ direction = "down" }))
 
 -- Noctalia menus
-hl.bind(mainMod .. "+Space", hl.dsp.exec_cmd(ipc .. "launcher toggle"))
-hl.bind(mainMod .. "+S", hl.dsp.exec_cmd(ipc .. "settings toggle"))
-hl.bind(mainMod .. " + C", hl.dsp.exec_cmd(ipc .. "launcher clipboard"))
+hl.bind(mainMod .. "+Space", hl.dsp.exec_cmd("noctalia msg panel-toggle launcher"))
+hl.bind(mainMod .. "+S", hl.dsp.exec_cmd("noctalia msg settings-toggle"))
+hl.bind(mainMod .. " + C", hl.dsp.exec_cmd("noctalia msg panel-toggle clipboard"))
 
 -- Switch workspaces with mainMod + [0-9]
 for i = 1, 9 do

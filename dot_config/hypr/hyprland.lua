@@ -29,3 +29,6 @@ require("conf.animations")
 require("conf.layout")
 require("conf.window-rules")
 require("conf.misc")
+
+-- For Noctalia Color templates
+require("noctalia").apply_theme()
